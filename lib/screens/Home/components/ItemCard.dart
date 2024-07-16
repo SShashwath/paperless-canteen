@@ -197,17 +197,17 @@ class _CounterWidgetState extends State<CounterWidget> {
     return Column(
       children: [
         SizedBox(
-          height: 65,
+          height: 55,
           width: 60,
           child: Stack(
             alignment: Alignment.center,
             children: [
               Positioned(
-                top: 43,
+                top: 100,
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
                   decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(33),
+                      borderRadius: BorderRadius.circular(20),
                       color: Colors.black),
                   child: const Text(
                     "Added",
@@ -219,7 +219,7 @@ class _CounterWidgetState extends State<CounterWidget> {
                 ),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(33),
                     color: Colors.white.withOpacity(0.95)),
@@ -227,15 +227,16 @@ class _CounterWidgetState extends State<CounterWidget> {
                   "x ${widget.itemCounter}",
                   style: const TextStyle(
                       color: Colors.black,
-                      fontSize: 16,
+                      fontSize: 18,
                       fontWeight: FontWeight.w700),
                 ),
               ),
             ],
           ),
         ),
-        const SizedBox(height: 22),
+        const SizedBox(height: 12),
       ],
     );
   }
 }
+
