@@ -208,6 +208,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
   }
 }
 
+// ignore: must_be_immutable
 class TotalComponent extends StatefulWidget {
   TotalComponent({super.key, required this.items, required this.total});
 
@@ -268,6 +269,7 @@ class _TotalComponentState extends State<TotalComponent> {
   }
 }
 
+// ignore: must_be_immutable
 class PaymentModeSelectionButton extends StatefulWidget {
   PaymentModeSelectionButton(
       {super.key,
@@ -377,6 +379,7 @@ class _BulkBookingComponentState extends State<BulkBookingComponent> {
   }
 }
 
+// ignore: must_be_immutable
 class CartItemCard extends StatefulWidget {
   CartItemCard({Key? key, required this.item}) : super(key: key);
 
